@@ -53,4 +53,18 @@ If you want to create normal java application, then just run `gradle createJavaP
 
 And also if you want to version control with the git or github, then you must manage your project resources. So, you must find out the resources that will whether synchronize or not with git server and specify it into .gitignore file.
 
+---
+
+# Multible Gradle Project
+
+The `multiprj` directory has sample gradle project for multiple project.  
+You can use this template gradle project.  
+
+1. You must modify the `settings.gradle` file properly for your project and sub projects.
+2. You may modify the `build.gradle` file at top of project directory.
+3. You may modify the `build.gradle` file of sub directory.
+
+Done.
+
+
 Let's happy coding.

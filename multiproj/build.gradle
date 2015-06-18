@@ -1,0 +1,33 @@
+apply plugin: 'java'
+
+// Setup Setting for All Projects
+allprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse-wtp'
+	apply plugin: 'idea'
+
+	version = '1.0'
+
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+}
+
+// Setup Common Setting for All Sub Projects
+subprojects {
+	repositories() {
+		mavenCentral()
+	}
+
+	dependencies {
+		testCompile("junit:junit")
+	}
+
+
+	task wrapper(type: Wrapper) {
+		gradleVersion = '2.3'
+	}
+}
+
+// Setup Setting for Specified Project
+project(':sub1') {
+}

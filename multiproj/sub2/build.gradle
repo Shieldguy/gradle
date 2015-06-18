@@ -1,0 +1,15 @@
+
+jar {
+    baseName = 'sub2'
+}
+
+repositories {
+	flatDir {
+		dirs 'lib'
+	}
+}
+
+dependencies {
+	// relations between sub projects
+	compile project(':sub1')
+}

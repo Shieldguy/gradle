@@ -1,0 +1,17 @@
+
+apply plugin: 'war'
+
+war {
+    baseName = 'sub3'
+}
+
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    // relations between sub projects
+    compile project(':sub1'), project(':sub2')
+}

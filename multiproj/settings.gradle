@@ -1,0 +1,5 @@
+// Define Top Project Name Here!
+rootProject.name = 'TopProject'
+
+// Include Sub Projects
+include "sub1", "sub2", "sub3"

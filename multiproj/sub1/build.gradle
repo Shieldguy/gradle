@@ -1,0 +1,15 @@
+
+apply plugin: 'java'
+
+jar {
+	baseName = 'sub1'
+}
+
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+}
